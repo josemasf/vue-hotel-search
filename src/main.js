@@ -1,12 +1,14 @@
 import Vue from 'vue'
 import App from './App.vue'
 
-import Buefy from 'buefy'
+import {Numberinput, Field, Button} from 'buefy'
 import 'buefy/dist/buefy.css'
 
 const pjson = require('../package.json');
 
-Vue.use(Buefy)
+Vue.use(Numberinput)
+Vue.use(Field)
+Vue.use(Button)
 
 Vue.config.productionTip = false
 
