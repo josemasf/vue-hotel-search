@@ -31,7 +31,7 @@ export default {
   }),  
   methods:{
     search(){
-    fetch(`http://fake-hotel-api.herokuapp.com/api/hotels?min_stars=${this.stars}&maxPrice=${this.maxPrice}`)
+    fetch(`http://fake-hotel-api.herokuapp.com/api/hotels?min_stars=${this.stars}&maxPrice=${this.maxPrice}&count=50`)
         .then(res=>res.json())
         .then(json=>{            
             this.hotels = json;
